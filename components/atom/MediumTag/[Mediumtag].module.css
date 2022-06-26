@@ -1,0 +1,6 @@
+.tagmd {
+  padding: 3px;
+  border-radius: 1px;
+  font-weight: 400;
+  font-size: var(--fs3sm);
+}

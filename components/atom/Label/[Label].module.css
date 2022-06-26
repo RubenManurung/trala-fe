@@ -1,0 +1,5 @@
+.textLabel {
+  font-size: var(--fs3sm);
+  text-align: start;
+  margin-left: 2px;
+}

@@ -1,0 +1,123 @@
+.containerKelas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 1440px;
+  padding: 0px 32px;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.containerKelas>h1 {
+  margin-top: 70px;
+}
+
+.containerKelas>hr {
+  margin-bottom: 40px;
+}
+
+.subContainer {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  grid-gap: 12px;
+}
+
+
+.subContainer::-webkit-scrollbar {
+  width: 0;
+}
+
+.card {
+  text-align: center;
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--gainsboro);
+  border-radius: 4px;
+}
+
+.cardBody {
+  width: 100%;
+  padding: 16px 7px 7px 7px;
+  text-align: left;
+}
+
+.cardBody>h4>b {
+  font-size: var(--fsmd);
+  line-height: 18px;
+  color: var(--nero);
+}
+
+.cardBody>p {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: var(--fs3sm);
+  line-height: 22px;
+  color: var(--nero);
+}
+
+.profileContainer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.profileContainer>div>h5 {
+  font-size: var(--fs3sm);
+  line-height: 12px;
+  color: var(--nero);
+}
+
+.profileContainer>div>p {
+  font-weight: 300;
+  font-size: var(--fs3sm);
+}
+
+.cardPrice {
+  display: inline-block;
+  width: auto;
+  background-color: var(--sunsetorange);
+  -webkit-border-radius: 1px 2px 2px 1px;
+  -moz-border-radius: 1px 2px 2px 1px;
+  border-radius: 1px 2px 2px 1px;
+  border-left: 1px solid #6ab070;
+  /* This makes room for the triangle */
+  margin-right: 14px;
+  margin-left: 0;
+  position: relative;
+  color: var(--white);
+  font-weight: 700;
+  font-size: var(--fs2sm);
+  line-height: 16px;
+  padding: 0 2px 0 2px;
+}
+
+.cardPrice:before {
+  content: "";
+  position: absolute;
+  display: block;
+  right: -7.2px;
+  top: 0px;
+  width: 0px;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid var(--sunsetorange);
+  transform: rotate(180deg);
+}
+
+/* Makes the circle */
+.cardPrice:after {
+  content: "";
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 4px;
+  display: block;
+  position: absolute;
+  right: -9px;
+  top: 19px;
+
+}

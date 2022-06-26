@@ -1,0 +1,9 @@
+.btnSunsetOrange {
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: var(--fs4sm);
+  background-color: var(--sunsetorange);
+  color: var(--white);
+}

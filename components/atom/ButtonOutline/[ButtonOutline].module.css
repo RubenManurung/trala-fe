@@ -1,0 +1,7 @@
+.btnOutline {
+  height: 36px;
+  border-radius: 2px;
+  font-size: var(--fs4sm);
+  background-color: var(--white);
+  color: var(--nero)
+}

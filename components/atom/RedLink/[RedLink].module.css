@@ -1,0 +1,9 @@
+.redLink {
+  font-size: var(--fs3sm);
+  color: var(--scarlet);
+  text-decoration: none;
+}
+
+.redLink:hover {
+  text-decoration: underline;
+}

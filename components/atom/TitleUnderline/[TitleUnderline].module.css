@@ -1,0 +1,7 @@
+.titleUnderline {
+  width: 148px;
+  height: 4px;
+  background: var(--sunsetorange);
+  border: 1px solid var(--sunsetorange);
+  border-radius: 30px;
+}

@@ -1,0 +1,31 @@
+.inputSm {
+  outline: none;
+  border: 1px solid var(--gainsboro);
+  width: inherit;
+  height: inherit;
+  padding: var(--fsmd);
+  transition: box-shadow 0.2s linear;
+  border-radius: 2px;
+  flex: 1;
+  font-size: var(--fsmd);
+  line-height: 24px;
+  background: var(--white);
+}
+
+.inputSm:focus {
+  box-shadow: 0 0 0 2px var(--endeavour);
+  outline: none;
+}
+
+.inputSm::placeholder {
+  color: var(--pinkswan);
+  background: var(--white);
+}
+
+.inputError {
+  box-shadow: 0 0 0 2px var(--outrageousorange);
+}
+
+.inputNormal {
+  border: 0.5px solid var(--gainsboro);
+}

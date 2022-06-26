@@ -1,0 +1,11 @@
+.btnOutlineSunsetOrange {
+  /* height: 36px; */
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  font-weight: 700;
+  border: 1px solid var(--sunsetorange);
+  font-size: var(--fs4sm);
+  background-color: var(--white);
+  color: var(--sunsetorange);
+}

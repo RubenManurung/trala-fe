@@ -1,0 +1,68 @@
+:root {
+  --beeswax: #E8D5AB;
+  --oldrose: #C0215E;
+  --sunsetorange: #FF4E4E;
+  --outrageousorange: #FF5F2D;
+  --crimson: #DB1F48;
+  --scarlet: #F11515;
+  --white: #ffffff;
+  --gainsboro: #DCDCDC;
+  --whitesmoke: #F5F5F5;
+  --pinkswan: #B4B4B4;
+  --darkgray: #AEAEAE;
+  --brightgrey: #505763;
+  --grey: #888888;
+  --portage: #8088DC;
+  --nero: #262626;
+  --black: #000000;
+  --endeavour: #34618F;
+  --curiousblue: #3D78C7;
+  --easternblue: #01949A;
+  --selectiveyellow: #FFB801;
+  --midnightexpress: #17203F;
+  --jordyblue: #87AEE1;
+  --whisper: #E5E5E5;
+  --linearbutton: linear-gradient(90deg, #FF4E4E 0%, #DF1375 174.83%);
+
+  --fs4xl: 28px;
+  --fs3xl: 25px;
+  --fs2xl: 20px;
+  --fsxl: 18px;
+  --fslg: 16px;
+  --fs2md: 15px;
+  --fsmd: 14px;
+  --fs4sm: 13px;
+  --fs3sm: 12px;
+  --fs2sm: 10px;
+  --fssm: 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Nunito', sans-serif;
+  src: url('/public/font/Nunito_Sans/NunitoSans-Black.ttf');
+  font-weight: 700;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}

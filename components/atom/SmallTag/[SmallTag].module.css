@@ -1,0 +1,10 @@
+.tagsm {
+  position: inherit;
+  /* top: 44px; */
+  padding: 3px;
+  border-radius: 1px;
+  background-color: var(--sunsetorange);
+  color: var(--white);
+  font-weight: 700;
+  font-size: var(--fssm);
+}
