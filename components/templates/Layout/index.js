@@ -18,9 +18,9 @@ const Index = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  if (state?.signInReducers?.data?.accessToken) {
+  if (state?.authReducers?.data?.accessToken) {
     return {
-      token: state.signInReducers.data.accessToken.token,
+      token: state.authReducers.data.accessToken.token,
     };
   } else {
     return {

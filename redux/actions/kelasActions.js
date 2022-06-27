@@ -1,26 +1,13 @@
-import axios from "axios";
-import { API } from "../../config";
 import { KELAS_DATA, DETAIL_KELAS } from "../types";
+import { kelasAPI } from "services/kelas";
 
 const getKelas = () => {
   return async (dispatch) => {
-    const path = "Testing/content";
-    await axios
-      .get(`${API}/${path}`, {
-        headers: {
-          Authorization: "Basic dHJpYWxxdWJpc2E6dHJpYWxxdWJpc2FrYW5kaWRhdA==",
-        },
-      })
-      .then((res) => {
-        dispatch({
-          type: KELAS_DATA,
-          payload: res.data,
-        });
-      })
-      .catch((error) => {
-        console.log("ERROR", error);
-        alert(error);
-      });
+    const response = await kelasAPI();
+    dispatch({
+      type: KELAS_DATA,
+      payload: response.data,
+    });
   };
 };
 

@@ -1,32 +1,17 @@
-import axios from "axios";
-import { API } from "../../config";
 import { SIGNIN_DATA, AUTHENTICATE, DEAUTHENTICATE } from "../types";
 import { setCookie, removeCookie, getCookie } from "../../utils/cookie";
 import Router from "next/router";
+import { loginAPI } from "services/auth";
 
 const SignIn = ({ username, password, deviceID }) => {
   return async (dispatch) => {
-    const path = "Auth/login";
-    await axios
-      .post(`${API}/${path}`, {
-        username,
-        password,
-        deviceID,
-      })
-      .then((res) => {
-        setCookie("token", res.data.accessToken.token);
-        dispatch({
-          type: SIGNIN_DATA,
-          payload: res.data,
-        });
-        alert("Berhasil Login");
-        // Router.reload(window.location.pathname);
-      })
-      .catch((error) => {
-        console.log("ERROR", error);
-        const { message } = error;
-        alert(message);
-      });
+    const response = await loginAPI({ username, password, deviceID });
+    console.log("RESPONSE LOGIN", response);
+    setCookie("token", response.data.accessToken.token);
+    dispatch({
+      type: SIGNIN_DATA,
+      payload: response.data,
+    });
   };
 };
 

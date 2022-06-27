@@ -123,6 +123,8 @@ const Index = ({ SignIn, token, deauthenticate }) => {
     setErrorValidation(validationLogin(userAccount));
   };
 
+  console.log("TOKEN", token);
+
   return (
     <>
       <nav className={styles.navSm}>
