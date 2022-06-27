@@ -2,14 +2,14 @@ import { combineReducers } from "redux";
 import slidersReducers from "./slidersReducers";
 import kelasReducers from "./kelasReducers";
 import artikelReducers from "./artikelReducers";
-import signInReducers from "./signInReducers";
+import authReducers from "./authReducers";
 
 // describe reducer in this apps
 const rootReducer = combineReducers({
   slidersReducers,
   kelasReducers,
   artikelReducers,
-  signInReducers,
+  authReducers,
 });
 
 export default rootReducer;
