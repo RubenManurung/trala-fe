@@ -20,7 +20,7 @@ const Index = (props) => {
       type={inputType}
       value={inputValue}
       name={inputName}
-      errorInput={errorInput}
+      // errorinput={errorInput}
       autoComplete="off"
       placeholder={inputPlaceHolder}
       {...nativeProps}

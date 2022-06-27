@@ -133,7 +133,7 @@ const Index = ({ kelas, getDetails }) => {
 
                   {value.instructors?.map((val, idx) => {
                     return (
-                      <>
+                      <React.Fragment key={idx}>
                         <Image
                           src={val.profilePic}
                           width={30}
@@ -152,7 +152,7 @@ const Index = ({ kelas, getDetails }) => {
                               : val.type.name}
                           </p>
                         </div>
-                      </>
+                      </React.Fragment>
                     );
                   })}
                 </div>

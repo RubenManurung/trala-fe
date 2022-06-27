@@ -249,7 +249,7 @@ const Index = ({ SignIn, token, deauthenticate }) => {
           <FormInput
             isIcon
             title=""
-            inputPlaceHolder="Mau Belajar apa hari ini"
+            inputPlaceHolder="Mau Belajar apa hari ini?"
           >
             <button className={styles.buttonIcon}>
               <FontAwesomeIcon
@@ -266,7 +266,7 @@ const Index = ({ SignIn, token, deauthenticate }) => {
           <ul className={styles.menuList} ref={parent}>
             {SUB_MENU_LIST.map((value, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   <div
                     style={{
                       display: "inline-block",
@@ -280,7 +280,7 @@ const Index = ({ SignIn, token, deauthenticate }) => {
                   </div>
 
                   <li key={index}>{value.title}</li>
-                </>
+                </React.Fragment>
               );
             })}
           </ul>

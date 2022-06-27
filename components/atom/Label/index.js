@@ -10,8 +10,8 @@ const Index = (props) => {
       style={{
         color: activeInputElement ? "#068EC8" : errorLabel ? "#FF0000" : "",
       }}
-      active={activeInputElement}
-      errorLabel={errorLabel}
+      active={activeInputElement.toString()}
+      // errorlabel={errorLabel}
     >
       {title}
     </label>
