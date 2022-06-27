@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     domains: ["qubisastorage.blob.core.windows.net"],
   },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   rewrites: function () {
     return [
       {
